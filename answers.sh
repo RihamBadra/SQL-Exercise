@@ -28,4 +28,4 @@ WHERE name="Layal";
 
 DELETE FROM students WHERE name = "Layal";
 
-
+### Joins
