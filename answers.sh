@@ -29,3 +29,18 @@ WHERE name="Layal";
 DELETE FROM students WHERE name = "Layal";
 
 ### Joins
+1) SELECT employees.name, employees.Company, companies.Date
+FROM (employees
+INNER JOIN companies ON employees.Company = companies.name);
+
+2) SELECT employees.name, employees.Company, companies.Date
+FROM (employees
+INNER JOIN companies ON employees.Company = companies.name AND Date<2000);
+
+3) SELECT employees.name, companies.name,employees.Role
+FROM (employees
+INNER JOIN companies ON employees.Company = companies.name )
+WHERE employees.Role='Graphic Designer';
+
+### Count & Filter
+
